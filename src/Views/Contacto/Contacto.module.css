@@ -1,0 +1,57 @@
+.container{   
+    position: relative;    
+    left: 30%;
+}
+.contactTitle{
+    margin-top: 5%;       
+}
+.contactImg{
+    position:relative;
+    width: 10em;
+    margin-left: -10%;    
+}
+.contactNode{
+    display: flex;
+    margin-top: 3%;
+}
+.contactP1{
+    display: inline;
+    position: relative;
+    left: 5%;
+    margin-top: 5%;
+}
+.contactP2{
+    display: inline;
+    position: relative;
+    margin-top: 5%;
+    left: 7%;
+    font-weight: 700;
+    color:#e5007f;  
+}
+.contactP3{
+    position: relative;
+    margin-top: 7%;
+    left: -15%;
+}
+
+/* Media Query para ajustes en dispositivos más pequeños (puedes ajustar el tamaño según tus necesidades) */
+@media only screen and (max-width: 600px) {
+    .container {
+        left: 0;
+    }
+
+    .contactNode {
+        flex-direction: column; /* Cambiado de fila a columna */
+        margin-left: 8em;
+    }
+
+    .contactP1,
+    .contactP2 {
+        left: 0; /* Ajuste para que no haya un desplazamiento lateral */
+    }
+    .contactTitle{
+        margin-top: 5%;
+        font-size: 40px;   
+        text-align: center;
+    }
+}

@@ -1,0 +1,66 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #e5007f;
+    color: white;
+    height: 62px;
+    text-align: center; /* Agregamos esta propiedad para centrar el contenido */ 
+    z-index: 4;       
+}
+
+.centeredContent {
+    display: inline-block; /* Asegura que el contenido esté centrado */    
+}
+.icon1{
+    left: -6vw;
+    display: flex;
+    top: -0.1vw;
+    transition: transform 0.2s ease-in-out;
+    filter: drop-shadow(2px 4px 4px black);
+}
+.icon1:hover{
+    transform: scale(1.2);    
+}
+.icon2{
+    transition: transform 0.2s ease-in-out;
+    left: -4vw;
+    top: -0.1vw;
+    filter: drop-shadow(2px 4px 4px black);
+}
+.icon2:hover{
+    transform: scale(1.2);
+}
+.phoneNumber{
+    display: inline;    
+}
+.footerp{
+    text-shadow: black 1px 1px 1px;
+    font-weight:600;
+    position: relative;
+    top: -15%;
+}
+@media only screen and (max-width: 600px) {
+    .icon1{
+        left: -1vw;
+        display: flex;
+        top: 4vw;
+        transition: transform 0.2s ease-in-out;
+        filter: drop-shadow(2px 4px 4px black);
+    }
+    .icon2{
+        transition: transform 0.2s ease-in-out;
+        left: 4vw;
+        top: 4vw;
+        filter: drop-shadow(2px 4px 4px black);
+    }
+    .centeredContent {
+        display: inline-block; /* Asegura que el contenido esté centrado */ 
+        margin-top: 0.1em;   
+    }
+    .phoneNumber{
+        display: flex;    
+        margin-left: 11em;
+        margin-top: -8.5vw;
+    }
+}

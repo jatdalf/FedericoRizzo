@@ -1,0 +1,17 @@
+.opH1{ 
+    margin-top: 7%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.opCenter{
+    vertical-align:middle;
+}
+.oppCardContainer{
+    margin-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 98%;
+    justify-content: space-around;
+    background-color: lightgray;   
+}

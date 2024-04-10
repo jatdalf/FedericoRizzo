@@ -1,0 +1,12 @@
+.container{
+    position: absolute;
+    top:12%;
+    left: 0%;
+    right: 0%;    
+}
+.home{
+   right: 0%;   
+}
+.homeImg{
+    width: 100vw;
+}

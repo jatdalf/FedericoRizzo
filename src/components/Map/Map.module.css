@@ -1,0 +1,26 @@
+.MapContainer{
+    height: 25em;
+    width: 35em;
+    margin-left: 1em;
+    margin-top: 3em;
+    margin-bottom: 5em;
+    border: 3px solid black;
+    box-shadow: 6px 4px 4px gray;
+    border-radius: 25px;
+}
+.mapDiv{
+    display: flex;
+}
+
+.mapTextDiv{
+    margin-top: 5em;
+    margin-left: 5em;
+}
+.mapH3{
+    color: #e5007f; 
+}
+.mapAdress{
+    position:absolute;
+    bottom: 0.1%;
+    left: 3.5em;
+}

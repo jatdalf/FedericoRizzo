@@ -1,0 +1,33 @@
+.oppMaincontainter{    
+    padding-top: 1%;
+    padding-bottom: 1%;    
+}
+.OppCardContainer{
+    width: 23.5em;
+    height: 100%;
+    color: white;
+    background-color: #DB1D59;
+}
+.OppCardContainer:hover{
+    color: black;
+    background-color: white;
+}
+.oppCardImgContainer{
+    padding: 1% 0% 1% 0%;
+}
+.oppCard{
+    width: 23.5em;
+    height: 23.5em;    
+}
+.oppPrice{
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -3%;
+}
+
+.oppText{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -9%;
+}

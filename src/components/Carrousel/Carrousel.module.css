@@ -1,0 +1,38 @@
+.mainContainer{
+    width: 50em;
+    height: 25em;
+    margin: 0 auto;    
+}
+.sliderContainer{
+    position: relative;
+    height: 100%;
+    top: 10%;
+}
+.imagesContainer{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid rgb(54, 48, 48);
+    overflow: hidden;
+}
+.imageCss{
+    width: 500px;
+    height: 400px;
+    position: relative;
+    left: -6%;
+}
+.dotsContainer{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: gray;
+}
+.dotsCss{
+    margin: 8px 3px;    
+    font-size: 14px;
+    text-align: center;    
+    }
+
+.active{
+    color: #e5007f;
+}
