@@ -3,7 +3,10 @@ import { HomeFilled , FormOutlined, MailOutlined, ShopOutlined } from '@ant-desi
 import { Menu } from 'antd';
 import { Children, useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import LogoSvg from '../../Assets/FrizzoInv.svg'
+import { HiOutlineMail } from "react-icons/hi";
+
+
+// import LogoSvg from '../../Assets/FrizzoInv.svg'
 
 const Header = () => {
   const [current, setCurrent] = useState('h');
@@ -25,37 +28,46 @@ const Header = () => {
 
   return (
     < >
+      <div className={style.topHeader}/>
+      
       <Menu className={style.navContainer} onClick={onClick} selectedKeys={[current]} mode="horizontal">
-      <Link to="/Home"><img className={style.HeaderSvg} src={LogoSvg} /></Link>
-      <Menu.Item key="1" style={{ left: "5px" }} >
+      {/* <Link to="/Home"><img className={style.HeaderSvg} src={LogoSvg} /></Link> */}
+      
+
+            <Menu.Item key="1" style={{ left: "5px" }} >
         <Link to="/Home">Inicio</Link>       
       </Menu.Item>
-
-      <Menu.Item key="2" >
-       <Link to="/About">Quienes somos</Link>       
-      </Menu.Item>
-      
-      <Menu.SubMenu key="3" title="Propiedades"  icon= {<HomeFilled />}>
-      <Menu.Item key="4"  >
+           
+      <Menu.SubMenu key="2" title="Propiedades" >
+      <Menu.Item key="3"  >
         <Link to="/Temporario">Alquiler Temporario</Link>
         </Menu.Item>        
-        <Menu.Item key="5"  >
+        <Menu.Item key="4"  >
         <Link to="/Venta">Propiedades a la venta</Link>
         </Menu.Item>
-        <Menu.Item key="6"  >
+        <Menu.Item key="5"  >
         <Link to="/Alquiler">Propiedades en Alquiler</Link>
         </Menu.Item>                
       </Menu.SubMenu>
 
-      <Menu.Item key="7" icon= {<FormOutlined />} >
+      <Menu.Item key="6" >
         <Link to="/Home#" onClick={() => handleScrollToSection('contactMe')}>Contacto</Link>
       </Menu.Item>
       
-      <Menu.Item key="8" icon= {<ShopOutlined />} style={{ right: "5px" }} >
+      <Menu.Item key="7"  style={{ right: "5px" }} >
         <Link to="/Contacto">Administracion</Link>
       </Menu.Item>     
+
+      <Menu.Item key="8" >
+       <Link to="/About">¿Quienes somos?</Link>       
+      </Menu.Item>
+
+      <HiOutlineMail />
+
      </Menu>
      <Outlet/>
+     
+     
     </>
    
   )
