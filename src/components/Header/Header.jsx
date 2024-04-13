@@ -3,7 +3,10 @@ import { HomeFilled , FormOutlined, MailOutlined, ShopOutlined } from '@ant-desi
 import { Menu } from 'antd';
 import { Children, useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import { HiOutlineMail } from "react-icons/hi";
+import { GrMailOption } from "react-icons/gr";
+import { GrInstagram } from "react-icons/gr";
+import { GrFacebookOption } from "react-icons/gr";
+import { ImWhatsapp } from "react-icons/im";
 
 
 // import LogoSvg from '../../Assets/FrizzoInv.svg'
@@ -34,19 +37,19 @@ const Header = () => {
       {/* <Link to="/Home"><img className={style.HeaderSvg} src={LogoSvg} /></Link> */}
       
 
-            <Menu.Item key="1" style={{ left: "5px" }} >
+      {/* <Menu.Item key="1" style={{ left: "5px" }} >
         <Link to="/Home">Inicio</Link>       
-      </Menu.Item>
+      </Menu.Item> */}
            
       <Menu.SubMenu key="2" title="Propiedades" >
-      <Menu.Item key="3"  >
-        <Link to="/Temporario">Alquiler Temporario</Link>
-        </Menu.Item>        
-        <Menu.Item key="4"  >
-        <Link to="/Venta">Propiedades a la venta</Link>
-        </Menu.Item>
-        <Menu.Item key="5"  >
-        <Link to="/Alquiler">Propiedades en Alquiler</Link>
+        <Menu.Item key="3"  >
+          <Link to="/Temporario">Alquiler Temporario</Link>
+          </Menu.Item>        
+          <Menu.Item key="4"  >
+          <Link to="/Venta">Propiedades a la venta</Link>
+          </Menu.Item>
+          <Menu.Item key="5"  >
+          <Link to="/Alquiler">Propiedades en Alquiler</Link>
         </Menu.Item>                
       </Menu.SubMenu>
 
@@ -62,8 +65,24 @@ const Header = () => {
        <Link to="/About">¿Quienes somos?</Link>       
       </Menu.Item>
 
-      <HiOutlineMail />
+      
+      <Menu.Item key="9" className={style.icons}>
+       <Link to="/About"><GrMailOption/></Link>       
+      </Menu.Item>
 
+      <Menu.Item key="10" className={style.iconsInsta}>
+       <Link to="/About"><GrInstagram/></Link>       
+      </Menu.Item>
+
+      <Menu.Item key="11" className={style.iconsFace}>
+       <Link to="/About"><GrFacebookOption/></Link>       
+      </Menu.Item>
+
+      <Menu.Item key="12" className={style.icons}>
+       <Link to="/About"><ImWhatsapp/><div className={style.telNumber}>0351-153415987</div></Link>       
+      </Menu.Item>
+      
+      
      </Menu>
      <Outlet/>
      

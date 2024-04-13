@@ -17,6 +17,31 @@
     background: linear-gradient(90deg, rgba(236,69,24,1) 0%, rgba(191,35,84,1) 100%);
 }
 
+.icons{
+    font-weight: 200;
+    font-size: 32px;
+}
+.icons2{
+    font-weight: 200;
+    font-size: 26px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.telNumber{
+    font-weight: 1000;
+    font-size: 22px;
+    margin-left: 40px;
+    margin-top: -50px;
+}
+.iconsInsta{
+    left: 7%;
+    font-size: 30px;
+}
+.iconsFace{
+    left: 3.5%;
+    font-size: 36px;
+}
 
 @media only screen and (max-width: 600px) {
     .HeaderSvg{
