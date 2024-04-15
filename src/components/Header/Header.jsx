@@ -66,7 +66,7 @@ const Header = () => {
       </Menu.Item>
 
       
-      <Menu.Item key="9" className={style.icons}>
+      <Menu.Item key="9" className={style.iconsMail}>
        <Link to="/About"><GrMailOption/></Link>       
       </Menu.Item>
 

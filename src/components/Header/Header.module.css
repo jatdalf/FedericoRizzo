@@ -42,6 +42,11 @@
     left: 3.5%;
     font-size: 36px;
 }
+.iconsMail{
+    font-weight: 200;
+    font-size: 36px;
+    left: 9.5%;    
+}
 
 @media only screen and (max-width: 600px) {
     .HeaderSvg{
