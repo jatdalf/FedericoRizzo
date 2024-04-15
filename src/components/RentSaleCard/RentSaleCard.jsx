@@ -39,7 +39,6 @@ const RentSaleCard = (props)=>{
         <div className={style.RentSaleCardContainer}>
             {/* <Link to="/Temporario"> */}
             <div className={style.tempRentCard}>
-                <h1 className={style.leftTextCard}>Alquiler Temporal</h1>
                 <div className={style.sliderContainer}>
                     <div className={style.imagesContainer}>
                         {/* <ul ref={imgRef}> */}
@@ -54,7 +53,6 @@ const RentSaleCard = (props)=>{
             </div>
             {/* </Link> */}
             <div className={style.saleCard}>
-                <h1 className={style.centerTextCard}>Venta</h1>
                 <div className={style.slider2Container}>
                     <div className={style.images2Container}>
                         {/* <ul ref={imgRef}> */}
@@ -68,7 +66,6 @@ const RentSaleCard = (props)=>{
                 </div>
             </div>       
             <div className={style.rentCard}>
-                <h1 className={style.rightTextCard}>Alquiler</h1>
                 <div className={style.slider3Container}>
                     <div className={style.images3Container}>
                         {/* <ul ref={imgRef}> */}

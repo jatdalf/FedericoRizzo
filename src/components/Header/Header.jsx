@@ -37,9 +37,9 @@ const Header = () => {
       {/* <Link to="/Home"><img className={style.HeaderSvg} src={LogoSvg} /></Link> */}
       
 
-      {/* <Menu.Item key="1" style={{ left: "5px" }} >
+      <Menu.Item key="1" style={{ left: "5px" }} >
         <Link to="/Home">Inicio</Link>       
-      </Menu.Item> */}
+      </Menu.Item>
            
       <Menu.SubMenu key="2" title="Propiedades" >
         <Menu.Item key="3"  >
