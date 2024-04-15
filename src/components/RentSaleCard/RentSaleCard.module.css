@@ -56,7 +56,7 @@
     width: 618px;
     height: 458px;
     position: relative;    
-    z-index: -1;
+    /* z-index: -1; */
     top: -0%;
     margin-left: -82px;    
     transform: skew(20deg);
@@ -87,6 +87,56 @@
     position: relative;    
     z-index: -1; 
 }
+.logoContainer{    
+    position: absolute;
+    width: 20vw;    
+    left: 40%;
+    top: 50%;    
+}
+.logoImg{
+    width: 20vw;
+    top: 2%;
+    z-index: 4; 
+}
+.logoImg2{
+    position: absolute;
+    width: 20vw;
+    top: 50%;
+    z-index: 5;
+}
+.bottom{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 15vw;
+    top: -7vw;
+    color: white;
+}
+.oportunidades{
+    position: relative;
+    font-size: 3.5vw;
+    font-weight: 300;
+    top: 9vw;
+    left: 5vw;
+}
+.exclusivas{
+    position: relative;
+    font-size: 3.5vw;
+    font-weight: 300;
+    top: 0.9vw;
+    left: 33vw;
+    font-style: italic;
+    font-weight: 800;
+}
+.condecoracion{
+    position: relative;
+    top: -7vw;
+    left: 55vw;
+}
+.condecoracionImg{
+    width: 4vw;
+}
+
 @media only screen and (max-width: 600px) {
     .RentSaleCardContainer{
         display: flex;

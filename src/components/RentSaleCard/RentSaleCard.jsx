@@ -3,6 +3,9 @@ import style from './RentSaleCard.module.css'
 import { Link } from 'react-router-dom';
 import {TempRentDb, SalesDb, RentDb}  from '../RentSaleDb';
 
+import logo2 from '../../Assets/FrizzoInv.svg'
+import condecoracion from '../../Assets/condecoracion.png'
+
 const RentSaleCard = (props)=>{
     const TRDb = TempRentDb
     const SDb = SalesDb
@@ -36,6 +39,7 @@ const RentSaleCard = (props)=>{
     //   }, [currentImgIndex]);
 
     return(
+        <>
         <div className={style.RentSaleCardContainer}>
             {/* <Link to="/Temporario"> */}
             <div className={style.tempRentCard}>
@@ -58,9 +62,10 @@ const RentSaleCard = (props)=>{
                         {/* <ul ref={imgRef}> */}
                             {SDb.map((image2) => (
                             // <li key={image2.id}>
-                                <img src={image2.image} className={style.SaleimageCss} alt={image2.alt} />
+                                <img src={image2.image} className={style.SaleimageCss} alt={image2.alt} />                                
                             //</li> 
-                            ))}
+                            ))}                            
+                            <img src={logo2} className={style.SaleimageCss} alt="Logo inmobiliaria"/>
                         {/* </ul> */}
                     </div>
                 </div>
@@ -77,8 +82,14 @@ const RentSaleCard = (props)=>{
                         {/* </ul>    */}
                     </div>
                 </div>
-            </div>     
+            </div>            
         </div>
+        <div className={style.bottom}>
+                <p className={style.oportunidades}>OPORTUNIDADES</p>
+                <p className={style.exclusivas}>EXCLUSIVAS</p>
+                <p className={style.condecoracion}><img src={condecoracion} className={style.condecoracionImg} alt="medalla" /></p>
+        </div>     
+    </>
 )}
 
 export default RentSaleCard;
