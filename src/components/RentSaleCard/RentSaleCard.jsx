@@ -85,10 +85,14 @@ const RentSaleCard = (props)=>{
             </div>            
         </div>
         <div className={style.bottom}>
-                <p className={style.oportunidades}>OPORTUNIDADES</p>
-                <p className={style.exclusivas}>EXCLUSIVAS</p>
-                <p className={style.condecoracion}><img src={condecoracion} className={style.condecoracionImg} alt="medalla" /></p>
+            <p className={style.oportunidades}>OPORTUNIDADES</p>
+            <p className={style.exclusivas}>EXCLUSIVAS</p>
+            <p className={style.condecoracion}><img src={condecoracion} className={style.condecoracionImg} alt="medalla" /></p>
         </div>     
+        <div className={style.AlquilerVentaButtons}>            
+            <button className={style.filterButtonVentasOn}>Ventas</button>
+            <button className={style.filterButtonAlquileresOff}>Alquileres</button>
+        </div>
     </>
 )}
 
