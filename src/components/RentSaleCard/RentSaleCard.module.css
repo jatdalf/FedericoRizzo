@@ -94,16 +94,13 @@
     top: 50%;    
 }
 .logoImg{
-    width: 20vw;
-    top: 2%;
-    z-index: 4; 
+    position: relative;
+    width: 26vw;
+    top: -32vw;
+    z-index: 6; 
+    left: 28%;
 }
-.logoImg2{
-    position: absolute;
-    width: 20vw;
-    top: 50%;
-    z-index: 5;
-}
+
 .bottom{
     position: relative;
     background-color: black;
@@ -136,37 +133,6 @@
 .condecoracionImg{
     width: 4vw;
 }
-.AlquilerVentaButtons{
-    position: relative;
-    top: -30vw;
-    z-index: 5;
-    left: 35.9%;    
-}
-.filterButtonVentasOn, .filterButtonAlquileresOff, .filterButtonVentasOff, .filterButtonAlquileresOn{
-    font-size: 1.8vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    border-radius: 35px;
-    padding: 1.2% 2% 1.2% ;    
-    border: none;    
-}
-.filterButtonVentasOn, .filterButtonAlquileresOn{
-    background-color: white;
-    font-weight: 500;
-}
-.filterButtonAlquileresOff, .filterButtonVentasOff {
-    background-color: rgb(155, 155, 155);
-    color: white;
-    opacity: 0.8;
-    font-weight: 300;
-}
-.filterButtonAlquileresOff:hover{
-    background-color: crimson;
-}
-.filterButtonVentasOff:hover{
-    background-color: crimson;
-}
-
 
 
 @media only screen and (max-width: 600px) {

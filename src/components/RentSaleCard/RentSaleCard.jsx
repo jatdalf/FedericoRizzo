@@ -3,8 +3,9 @@ import style from './RentSaleCard.module.css'
 import { Link } from 'react-router-dom';
 import {TempRentDb, SalesDb, RentDb}  from '../RentSaleDb';
 
-import logo2 from '../../Assets/FrizzoInv.svg'
+import logo from '../../Assets/1.png'
 import condecoracion from '../../Assets/condecoracion.png'
+import HomeSearchBar from '../HomeSearchBar/HomeSearchBar';
 
 const RentSaleCard = (props)=>{
     const TRDb = TempRentDb
@@ -64,8 +65,7 @@ const RentSaleCard = (props)=>{
                             // <li key={image2.id}>
                                 <img src={image2.image} className={style.SaleimageCss} alt={image2.alt} />                                
                             //</li> 
-                            ))}                            
-                            <img src={logo2} className={style.SaleimageCss} alt="Logo inmobiliaria"/>
+                            ))}                                                       
                         {/* </ul> */}
                     </div>
                 </div>
@@ -89,9 +89,11 @@ const RentSaleCard = (props)=>{
             <p className={style.exclusivas}>EXCLUSIVAS</p>
             <p className={style.condecoracion}><img src={condecoracion} className={style.condecoracionImg} alt="medalla" /></p>
         </div>     
-        <div className={style.AlquilerVentaButtons}>            
-            <button className={style.filterButtonVentasOn}>Ventas</button>
-            <button className={style.filterButtonAlquileresOff}>Alquileres</button>
+       
+        <HomeSearchBar />
+       
+        <div className={style.logoImg}>
+            <img src={logo} className={style.logoImg} alt="Logo Inmobiliaria"/>
         </div>
     </>
 )}

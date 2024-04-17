@@ -1,0 +1,41 @@
+.AlquilerVentaButtons{
+    position: relative;
+    top: -30vw;
+    z-index: 5;
+    left: 35.9%;    
+}
+.filterButtonVentasOn, .filterButtonAlquileresOff, .filterButtonVentasOff, .filterButtonAlquileresOn{
+    font-size: 1.8vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 35px;
+    padding: 1.2% 2% 1.2% ;    
+    border: none;    
+}
+.filterButtonVentasOn, .filterButtonAlquileresOn{
+    background-color: white;
+    font-weight: 500;
+}
+.filterButtonAlquileresOff, .filterButtonVentasOff {
+    background-color: rgb(155, 155, 155);
+    color: white;
+    opacity: 0.8;
+    font-weight: 300;
+}
+.filterButtonAlquileresOff :hover{
+    background-color: crimson;
+}
+.filterButtonVentasOff :hover{
+    background-color: crimson;
+}
+
+.searchBarContainer{
+    width: 86%;
+    height: 7vw;
+    background-color: white;
+    position: relative;
+    top: -29vw;
+    z-index: 5;
+    border-radius: 40px;
+    left: 7%;
+}
