@@ -1,5 +1,4 @@
 import style from "./Header.module.css"
-import { HomeFilled , FormOutlined, MailOutlined, ShopOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 import { Children, useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
@@ -67,19 +66,19 @@ const Header = () => {
 
       
       <Menu.Item key="9" className={style.iconsMail}>
-       <Link to="/About"><GrMailOption/></Link>       
+       <Link to="/Home#" onClick={() => handleScrollToSection('contactMe')}><GrMailOption/></Link>       
       </Menu.Item>
 
       <Menu.Item key="10" className={style.iconsInsta}>
-       <Link to="/About"><GrInstagram/></Link>       
+       <Link to="https://www.instagram.com/federicorizzo.ok/" target="_blank"><GrInstagram/></Link>       
       </Menu.Item>
 
       <Menu.Item key="11" className={style.iconsFace}>
-       <Link to="/About"><GrFacebookOption/></Link>       
+       <Link to="https://www.facebook.com/federicorizzo.ok" target="_blank"><GrFacebookOption/></Link>       
       </Menu.Item>
 
       <Menu.Item key="12" className={style.icons}>
-       <Link to="/About"><ImWhatsapp/><div className={style.telNumber}>0351-153415987</div></Link>       
+       <Link to='https://api.whatsapp.com/send?phone=5493513415987' target='_blank' rel="noreferrer"><ImWhatsapp/><div className={style.telNumber}>0351-153415987</div></Link>       
       </Menu.Item>
       
       

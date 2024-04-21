@@ -50,10 +50,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .HeaderSvg{
-        height: 26px  ;
-        margin-left: 13%;
-        margin-top: 20px;
-        width: 100px;
+    .navContainer{
+        font-size: 11px;       
     }
 }
