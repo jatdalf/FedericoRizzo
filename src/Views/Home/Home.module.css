@@ -3,6 +3,7 @@
     top:12%;
     left: 0%;
     right: 0%;    
+    overflow-x: hidden;
 }
 .home{
    right: 0%;   

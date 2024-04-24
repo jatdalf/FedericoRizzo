@@ -3,6 +3,7 @@
     top: -30vw;
     z-index: 10;
     left: 35.9%;    
+    z-index: 20;
 }
 .filterButtonVentasOn, .filterButtonAlquileresOff, .filterButtonVentasOff, .filterButtonAlquileresOn{
     font-size: 1.8vw;
@@ -35,7 +36,7 @@
     background-color: white;
     position: relative;
     top: -29vw;
-    z-index: 5;
+    
     border-radius: 40px;
     left: 7%;
 }
@@ -57,4 +58,33 @@
   }
   
   /* Add additional styling as needed */
+  .categorias{
+    margin-left: 5%;
+  }
+  .opt{
+    border: none;        
+    font-size: 14px;
+    color: rgb(101, 99, 99);
+    position: relative;
+    top: -10%;
+    left: -2%;
+    width: 190px;
+    max-width: 190px;
+  }
+  .buscar{
+    margin-top: 6%;
+    height: 4.5vw;
+    background: rgb(236,69,24);
+    background: linear-gradient(90deg, rgba(236,69,24,1) 0%, rgba(191,35,84,1) 100%);
+    color: white;
+    font-size: 20px;
+    border: none;
+    width: 20vw;
+    border-radius: 35px;
+  }
   
+  .buscar > span{
+    margin-left: 10%;
+    position: relative;
+    top: -10px;
+  }

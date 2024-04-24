@@ -1,9 +1,11 @@
 .RentSaleCardContainer{
     display: flex;
     width: 100%;    
+    min-width: 100%;
     margin-top: 1.5vw;    
     margin-bottom: 2vw;
-    height: 458px;
+    height: 460px;
+    background-color: black;
 }
 .tempRentCard, .saleCard, .rentCard{
     width: 33.3%;        
@@ -17,6 +19,7 @@
     width: 500px;
     height: 80%;    
     margin-top: 68px;
+    margin-left: 0%;    
 }
 .saleCard{
     z-index: 3;      
@@ -32,7 +35,7 @@
 }
 .rentCard{    
     z-index: 2;    
-    margin-left: 0px;
+    margin-left: 4%;
     width: 450px;    
 }
 

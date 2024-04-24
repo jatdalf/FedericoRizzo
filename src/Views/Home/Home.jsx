@@ -18,12 +18,12 @@ const Home = () => {
             <div className={style.container}>
                 <div className={style.home}>
                     <RentSaleCard />
-                    <MisionVisionValor />    
-                    <Contacto />      
                     <Opportunities />
+                    <MisionVisionValor />    
+                    <Contacto />                          
                     <Map />
                     <CpiBanner />
-                    <Footer />
+                    {/* <Footer /> */}
                     <WhatsApp />            
                 </div>                
             </div>
