@@ -7,8 +7,8 @@ const Opportunities = ()=>{
     const currentCard = ventas.slice(0, 3)
 
     return(
-        <div className={style.opCenter}>
-            <h1 className={style.opH1}>OPORTUNIDADES</h1>
+        <div className={style.opFondo}>
+            <span className={style.opSpan}>Te presentamos las últimas oportunidades en venta y alquiler.</span>
                 <div className={style.oppCardContainer}>
                     {currentCard.map(ventas =>{
                         return <OppCard

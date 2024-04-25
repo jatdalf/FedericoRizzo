@@ -16,12 +16,12 @@
     padding: 1% 0% 1% 0%;
 }
 .oppCard{
-    width: 23.5em;
-    height: 23.5em;    
+    width: 20em;
+    height: 20em;    
 }
 .oppPrice{
-    font-weight: 800;
-    font-size: 50px;
+    font-weight: 600;
+    font-size: 28px;
     text-align: center;
     margin-top: -3%;
 }

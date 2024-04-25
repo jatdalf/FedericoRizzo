@@ -1,17 +1,25 @@
-.opH1{ 
-    margin-top: 7%;
+.opSpan{ 
+    margin-top: 5%;
+    margin-left: 5.4%;
     text-align: center;
     margin-bottom: 5%;
+    color: white ;
+    font-size: 20px;
+    font-weight: 500;
 }
-.opCenter{
+.opFondo{
     vertical-align:middle;
+    background-color: black;
+    position: relative;
+    top: -218px;
 }
 .oppCardContainer{
-    margin-left: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 98%;
+    width: 92%;
     justify-content: space-around;
     background-color: lightgray;   
 }

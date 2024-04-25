@@ -1,7 +1,6 @@
 import React from 'react'
 import CardsMvv from '../CardsMvv/CardsMvv'
 import style from './MisionVisionValor.module.css'
-import temporalImage from '../../Assets/rizzoImg1.png'
 
 
 const MisionVisionValor = ()=>{
@@ -36,8 +35,7 @@ const MisionVisionValor = ()=>{
                     cardImage= {cardData.cardImage}                     
                     cardText = {cardData.cardText}            
                 />})       
-                }      
-                <img className={style.TemporalImage} src={temporalImage} /> 
+                }                      
         </div>
         
     )

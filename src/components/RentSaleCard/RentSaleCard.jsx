@@ -41,59 +41,61 @@ const RentSaleCard = (props)=>{
 
     return(
         <>
-        <div className={style.RentSaleCardContainer}>
-            {/* <Link to="/Temporario"> */}
-            <div className={style.tempRentCard}>
-                <div className={style.sliderContainer}>
-                    <div className={style.imagesContainer}>
-                        {/* <ul ref={imgRef}> */}
-                            {TRDb.map((image) => (
-                            //<li key={image.id}>
-                                <img src={image.image} className={style.imageCss} alt={image.alt} />
-                            //</li>
-                            ))}
-                        {/* </ul> */}
+        <div className={style.fondo}>
+            <div className={style.RentSaleCardContainer}>
+                {/* <Link to="/Temporario"> */}
+                <div className={style.tempRentCard}>
+                    <div className={style.sliderContainer}>
+                        <div className={style.imagesContainer}>
+                            {/* <ul ref={imgRef}> */}
+                                {TRDb.map((image) => (
+                                //<li key={image.id}>
+                                    <img src={image.image} className={style.imageCss} alt={image.alt} />
+                                //</li>
+                                ))}
+                            {/* </ul> */}
+                        </div>
                     </div>
                 </div>
+                {/* </Link> */}
+                <div className={style.saleCard}>
+                    <div className={style.slider2Container}>
+                        <div className={style.images2Container}>
+                            {/* <ul ref={imgRef}> */}
+                                {SDb.map((image2) => (
+                                // <li key={image2.id}>
+                                    <img src={image2.image} className={style.SaleimageCss} alt={image2.alt} />                                
+                                //</li> 
+                                ))}                                                       
+                            {/* </ul> */}
+                        </div>
+                    </div>
+                </div>       
+                <div className={style.rentCard}>
+                    <div className={style.slider3Container}>
+                        <div className={style.images3Container}>
+                            {/* <ul ref={imgRef}> */}
+                                {RDb.map((image3) => (
+                                // <li key={image3.id}>
+                                    <img src={image3.image} className={style.RentImageCss} alt={image3.alt} />
+                                // </li>
+                                ))}
+                            {/* </ul>    */}
+                        </div>
+                    </div>
+                </div>            
             </div>
-            {/* </Link> */}
-            <div className={style.saleCard}>
-                <div className={style.slider2Container}>
-                    <div className={style.images2Container}>
-                        {/* <ul ref={imgRef}> */}
-                            {SDb.map((image2) => (
-                            // <li key={image2.id}>
-                                <img src={image2.image} className={style.SaleimageCss} alt={image2.alt} />                                
-                            //</li> 
-                            ))}                                                       
-                        {/* </ul> */}
-                    </div>
-                </div>
-            </div>       
-            <div className={style.rentCard}>
-                <div className={style.slider3Container}>
-                    <div className={style.images3Container}>
-                        {/* <ul ref={imgRef}> */}
-                            {RDb.map((image3) => (
-                            // <li key={image3.id}>
-                                <img src={image3.image} className={style.RentImageCss} alt={image3.alt} />
-                            // </li>
-                            ))}
-                        {/* </ul>    */}
-                    </div>
-                </div>
-            </div>            
-        </div>
-        <div className={style.bottom}>
-            <p className={style.oportunidades}>OPORTUNIDADES</p>
-            <p className={style.exclusivas}>EXCLUSIVAS</p>
-            <p className={style.condecoracion}><img src={condecoracion} className={style.condecoracionImg} alt="medalla" /></p>
-        </div>     
-       
-        <HomeSearchBar />
-       
-        <div className={style.logoImg}>
-            <img src={logo} className={style.logoImg} alt="Logo Inmobiliaria"/>
+            <div className={style.bottom}>
+                <p className={style.oportunidades}>OPORTUNIDADES</p>
+                <p className={style.exclusivas}>EXCLUSIVAS</p>
+                <p className={style.condecoracion}><img src={condecoracion} className={style.condecoracionImg} alt="medalla" /></p>
+            </div>     
+        
+            <HomeSearchBar />
+        
+            <div className={style.logoImg}>
+                <img src={logo} className={style.logoImg} alt="Logo Inmobiliaria"/>
+            </div>
         </div>
     </>
 )}
