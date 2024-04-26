@@ -14,9 +14,17 @@ const Opportunities = ()=>{
                         return <OppCard
                             key= {ventas.id}
                             ID= {ventas.id}
-                            images= {ventas.images}
-                            price= {ventas.price}
-                            coin = {ventas.coin}
+                            images= {ventas.images}  
+                            kind = {ventas.kind}                          
+                            rent = {ventas.rent}
+                            sell = {ventas.sell}
+                            temporal = {ventas.temporal}
+                            rent_price = {ventas.rent_price}
+                            sell_price = {ventas.sell_price}
+                            temporal_price = {ventas.temporal_price}
+                            rent_coin = {ventas.rent_coin}
+                            sell_coin = {ventas.sell_coin}
+                            temporal_coin = {ventas.temporal_coin}
                             titles= {ventas.titles}
                         />})       
                     }       

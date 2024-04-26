@@ -1,0 +1,11 @@
+.heartcontainer{
+    position: relative;
+    margin-top: -168px;
+    margin-left: 235px;
+    margin-right: 55px;
+    font-size: large;
+    background-color: black;
+    border-radius: 6px;
+    padding-left: 6px;
+    padding-top: 6px;
+}

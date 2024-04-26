@@ -3,31 +3,43 @@
     padding-bottom: 1%;    
 }
 .OppCardContainer{
-    width: 23.5em;
+    width: 20em;
     height: 100%;
-    color: white;
-    background-color: #DB1D59;
+    color: white;    
+    border-radius: 15px;
 }
 .OppCardContainer:hover{
-    color: black;
+    color: rgb(235, 92, 20);
     background-color: white;
 }
 .oppCardImgContainer{
-    padding: 1% 0% 1% 0%;
+    padding: 1% 0% 1% 0%;    
 }
 .oppCard{
     width: 20em;
-    height: 20em;    
+    height: 14em;    
+    border-radius: 15px;
 }
 .oppPrice{
-    font-weight: 600;
-    font-size: 28px;
-    text-align: center;
-    margin-top: -3%;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 12%;
+    margin-top: -15%;
 }
 
-.oppText{
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: -9%;
+.oppText1{
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.oppText2{
+    margin-left: 3%;    
+    color: gray;
+}
+
+.kind{
+    color: #E43138;
+    margin-left: 3%;
+    font-size: 13px;
+    font-weight: 600;
 }

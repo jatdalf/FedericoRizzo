@@ -11,15 +11,16 @@
     vertical-align:middle;
     background-color: black;
     position: relative;
-    top: -218px;
+    top: -212px;
+    height: 540px;
 }
 .oppCardContainer{
     margin-left: 4%;
     margin-right: 4%;
+    margin-top: 4%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 92%;
-    justify-content: space-around;
-    background-color: lightgray;   
+    justify-content: space-around;     
 }
