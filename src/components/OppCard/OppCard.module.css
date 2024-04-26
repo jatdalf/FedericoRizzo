@@ -9,7 +9,7 @@
     border-radius: 15px;
 }
 .OppCardContainer:hover{
-    color: rgb(235, 92, 20);
+    /* color: rgb(235, 92, 20); */
     background-color: white;
 }
 .oppCardImgContainer{
@@ -42,4 +42,10 @@
     margin-left: 3%;
     font-size: 13px;
     font-weight: 600;
+}
+.rentSaleContainer{
+    position: inherit;
+    margin-left: 6%;
+    margin-top: -62%;
+    display: flex;    
 }

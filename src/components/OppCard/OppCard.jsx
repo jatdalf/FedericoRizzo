@@ -2,12 +2,16 @@ import React from "react";
 import style from './OppCard.module.css'
 import Heart from "../heart/hearth";
 import Mark from "../mark/mark";
-
+import ForRent from "../ForRent/ForRent";
+import ForSale from "../ForSale/ForSale";
 
 const OppCard = (props)=>{
     const cardImg = props.images
     let cardPrice = 0;    
     let kind = props.kind
+    const forRent = props.rent
+    const forSale = props.sell
+    
     if (props.rent){
         cardPrice = props.rent_coin + " " + formatearNumero(props.rent_price)    
     }else if (props.sell){
@@ -40,6 +44,10 @@ const OppCard = (props)=>{
                 </p>
                 <Heart />
                 <Mark />
+                <div className={style.rentSaleContainer}>
+                    { forSale ? <ForSale /> : <div /> }   
+                    { forRent ? <ForRent /> : <div /> }                       
+                </div>
             </div>
         </div>
     )
