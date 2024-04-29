@@ -1,0 +1,106 @@
+.mainContainer{
+    width: 100%;
+    margin-left: 5%;
+    margin-top: -15%;    
+}
+.propiedades{
+    color: #E43138;
+    font-size: 38px;
+    margin-right: 1%;
+    font-weight: 300;
+}
+.ofrecidas{
+    color: #E43138;
+    font-style: italic;
+    font-weight: 900;  
+    font-size: 38px;  
+}
+.OferedCardContainer{
+    margin-top: 2.5%;
+}
+.duplex > img{
+    width: 22%;
+    object-fit: cover;
+    height: 20vw;    
+}
+.departamentos > img{
+    position: relative;
+    width: 22%;
+    object-fit: cover;
+    height: 20vw;
+    top: -20.6vw;
+    margin-left: 23%;
+    filter: brightness(80%);
+}
+.departamentos > span {
+    top: -25.2vw;
+    margin-left: -4.5%;
+}
+.departamentos > button {
+    top: -23.2vw;
+    margin-left: -4.5%;
+}
+.casas > img{
+    position: relative;
+    width: 45%;
+    object-fit: cover;
+    height: 20vw;
+    top: -20.6vw;
+    filter: brightness(70%);
+}
+.casas > span{
+    top: -26vw;
+    margin-left: -10%;
+}
+.casas > button{
+    top: -24vw;
+    margin-left: 0.5%;
+}
+.inversiones > img{
+    position: relative;
+    width: 45%;
+    object-fit: cover;
+    height: 40.6vw;
+    top: -61.9vw;
+    margin-left: 45.8%;
+    filter: brightness(60%);
+}
+.inversiones > span{
+    top: -72vw;
+    margin-left: -15%;
+}
+.inversiones > button {
+    top: -70vw;
+    margin-left: -3%;
+}
+
+
+
+
+.title{
+    position: relative;
+    font-size: 2vw;
+    font-weight: 700;
+    top: -4.5vw;
+    left: -15vw;
+    color: white;
+}
+.verMas{
+    position: relative;
+    font-size: 0.8vw;
+    font-weight: 500;
+    top: -2.5vw;
+    left: -21.5vw;
+    color: white;
+    background-color: #E43138;
+    border: none;
+    border-radius: 10px;
+    padding-top: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 0.5%;
+}
+.verMas:hover {
+    color:  #E43138;
+    background-color: white;
+}

@@ -10,6 +10,7 @@ import Opportunities from "../../components/Opportunities/opportunities";
 import CpiBanner from "../../components/CpiBanner/CpiBanner";
 import Map from "../../components/Map/Map";
 import RentSaleCard from "../../components/RentSaleCard/RentSaleCard";
+import OfferedProperties from "../../components/OfferedProperties/OfferedProperties";
 
 const Home = () => {
     return (
@@ -19,7 +20,7 @@ const Home = () => {
                 <div className={style.home}>
                     <RentSaleCard />
                     <Opportunities />
-                    <MisionVisionValor />    
+                    <OfferedProperties />    
                     <Contacto />                          
                     <Map />
                     <CpiBanner />
