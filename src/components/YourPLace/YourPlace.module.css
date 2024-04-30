@@ -1,0 +1,43 @@
+.tuLugarContainer{
+    width: 2000px;
+    
+    }
+.tuLugarImg{
+    width: 2000px;
+    height: 900px;
+    object-fit: cover;
+    margin-left: -450px;
+    margin-top: -700px;
+}
+.tuLugarSeparadorSuperior{    
+    position: relative;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    top:-906px;    
+}
+.tuLugarTU{
+    position: relative;
+    font-size: 114px;
+    font-weight: 800;
+    top: -750px;
+    color: transparent;
+    left: 40%;
+    -webkit-text-stroke: 2px white;
+}
+.tuLugarLUGAR{
+    position: relative;
+    font-size: 114px;
+    font-weight: 800;
+    top: -806px;
+    color: white;
+    left: 40%;    
+}
+.tuLugarSubrayado{
+    position: relative;
+    background-color: #E43138;
+    height: 20px;
+    width: 400px;
+    top: -814px;
+    left: 800px;
+}
