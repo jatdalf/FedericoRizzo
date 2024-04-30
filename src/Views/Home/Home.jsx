@@ -11,6 +11,7 @@ import CpiBanner from "../../components/CpiBanner/CpiBanner";
 import Map from "../../components/Map/Map";
 import RentSaleCard from "../../components/RentSaleCard/RentSaleCard";
 import OfferedProperties from "../../components/OfferedProperties/OfferedProperties";
+import QueresVender from "../../components/QueresVender/QueresVender";
 
 const Home = () => {
     return (
@@ -20,7 +21,8 @@ const Home = () => {
                 <div className={style.home}>
                     <RentSaleCard />
                     <Opportunities />
-                    <OfferedProperties />    
+                    <OfferedProperties />
+                    <QueresVender />    
                     <Contacto />                          
                     <Map />
                     <CpiBanner />

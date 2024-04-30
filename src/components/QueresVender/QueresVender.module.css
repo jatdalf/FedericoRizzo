@@ -1,0 +1,201 @@
+.QueresVenderContainer{
+    width: 100%;
+    background-color: #E43138;
+    color: white;
+    height: 1400px;
+    position: relative;
+    top: -700px;
+    font-size: 40px;
+}
+.SpQueres{
+    position: relative;
+    font-weight: 300;
+    top: 5%;
+    left: 35%;
+}
+.SpVender{
+    position: relative;
+    font-weight: 900;
+    top: 5%;
+    left: 36%;
+    font-style: italic;
+}
+.SpAlquilar{
+    position: relative;
+    font-weight: 900;
+    top: 8.5%;
+    left: 0%;
+    font-style: italic;
+}
+.SpPropiedad{
+    position: relative;
+    font-weight: 300;
+    top: 8.5%;
+    left: 1%;
+}
+
+.QueresVenderContainer > img {
+    margin-left: 40%;
+    width: 19vw;
+    margin-top: 14%;
+    font-size: 30px;
+}
+
+.QueresVenderContainer > button {
+    margin-left: 40%;
+    width: 20vw;
+    margin-top: 2%;
+    color:#E43138;
+    background-color: white;    
+    font-weight: 100;
+    border: none;
+    border-radius: 10px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 30px;
+}
+.SpSobre{
+    position: relative;
+    top: -260px;
+    margin-right: 1%;
+}
+.SpNosotros{
+    position: relative;
+    font-weight: 900;
+    font-style: italic;
+    top: -260px;
+}
+.QueresVenderContainer > button:hover{
+    font-weight: 500;
+    background-color: gray;
+    color: white;
+}
+.QvSeparador{
+    background-color: black;
+    height: 0.6vw;
+    margin-top: 8%;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-radius: 10px;
+}
+.seccionSumando{
+    position: relative;
+    left: 5%;
+    top: 5%;
+}
+.SpSumandoImg{
+    position: relative;
+    width: 20vw;
+    right: -40%;
+    top: 40px;
+    font-weight: 100;    
+}
+.bannerSumador{
+    background-color: white;
+    height: 150px;
+    width: 55%;
+    border: 5px solid black;
+    border-radius: 20px;
+    position: relative;
+    top: -210px;    
+}
+.NumerosSumadores{
+    color:#d22126;
+    font-size: 60px;
+    font-weight: 900;
+    display: flex;
+    margin-left: 10%;    
+}
+.segundoSumador, .tercerSumador{
+    margin-left: 10%;
+}
+
+.sumadorHr1, .sumadorHr2{
+    width: 1px;
+    height: 126px;
+    background-color: black;    
+    position: relative;   
+}
+.sumadorHr1{
+    top: -90px;
+    margin-left: 33%;
+}
+.sumadorHr2{
+    top: -238px;
+    margin-left: 64%;
+}
+
+.frasesDeSumadores{
+    color: black;
+    font-size: 15px;
+    position: relative;
+    top: -310px;
+    margin-left: 12%;
+}
+.sumadorSp2{
+    margin-left: 21%;
+}
+.sumadorSp3{
+    margin-left: 23%;
+}
+.sumadorSp1b{
+    margin-left: 2%;
+}
+.sumadorSp2b{
+    margin-left: 24%;
+}
+.sumadorSp3b{
+    margin-left: 21%;
+}
+.SpfirmaDigitalImg{
+    width: 17vw;
+    position: relative;
+    top: -155px;
+    margin-left: 3%;
+}
+.SpfirmaDigitalText1{
+    font-size: 20px;
+    position: relative;
+    margin-left: 1%;
+    top: -330px;
+    font-weight: 600;
+}
+.SpfirmaDigitalText2{
+    font-size: 20px;
+    position: relative;
+    margin-left: -36%;
+    top: -310px;
+    font-weight: 600;
+}
+.SpTokkoImg{
+    position: relative;
+    width: 14.5vw;
+    margin-left: 29%;
+}
+.tokkoContainer{
+    display: flex;
+    margin-left: 30%;
+    top: -50px;
+    position: relative;
+}
+.spTokkoDiv1{
+    background-color: black;
+    width: 21px;
+    height: 15px;
+}
+.spTokkoDiv2{
+    background-color: black;
+    width: 21px;
+    height: 20px;
+    margin-left: 6px;
+    top: -5px;
+    position: relative;
+}
+.spTokkoSpan{
+    margin-left: 10px;
+    font-size: 23px;
+    font-weight: 600;
+    position: relative;
+    top:-11px;
+}
+    
