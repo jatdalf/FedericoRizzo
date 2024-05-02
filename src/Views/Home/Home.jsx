@@ -13,6 +13,7 @@ import RentSaleCard from "../../components/RentSaleCard/RentSaleCard";
 import OfferedProperties from "../../components/OfferedProperties/OfferedProperties";
 import QueresVender from "../../components/QueresVender/QueresVender";
 import YourPlace from "../../components/YourPLace/YourPlace";
+import Comments from "../../components/Comments/Comments";
 
 const Home = () => {
     return (
@@ -25,7 +26,7 @@ const Home = () => {
                     <OfferedProperties />
                     <QueresVender />    
                     <YourPlace />                          
-                    <Map />
+                    <Comments />
                     <CpiBanner />
                     {/* <Footer /> */}
                     <WhatsApp />            
