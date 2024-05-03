@@ -1,0 +1,36 @@
+.commentCardContainer{
+    height: 600px;
+    background-color: #E43138;
+    width: 300px;
+    color: white;
+    border: 6px solid black;
+    border-radius: 25px;
+    position: relative;
+    top: -250px;
+    font-size: 22px;
+}
+.cardUserdataContainer{
+    height: 100px;
+    background-color: rgb(63, 56, 56);
+    margin-top: 405px;
+    border-radius: 0px 0px 20px 20px;
+}
+.cardUserComment{
+    margin-left: 10px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.cardUserPic{
+    width: 6vw;
+    margin-left: 5px;
+    margin-top: 10px;
+    background-color: #E43138;
+    border-radius: 40px;
+}
+.cardUsername{
+    font-weight: 600;
+    position: relative;
+    top: -35px;
+    margin-left: 30px;
+}

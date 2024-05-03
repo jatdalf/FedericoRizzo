@@ -1,0 +1,24 @@
+.CommentsContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.CommentsImg{
+    width: 12vw;
+    position: relative;
+    top: -250px;
+}
+.CommentsOpiniones, .CommentsQimportan{
+    font-size: 46px;
+    font-weight: 800;
+    color:#E43138;
+}
+.CommentsOpiniones{
+    position: relative;
+    top: -340px;
+    left: 2%;
+}
+.CommentsQimportan{
+    position: relative;
+    top: -360px;
+    left: 17%;
+}
