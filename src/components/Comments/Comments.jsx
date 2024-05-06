@@ -13,7 +13,7 @@ const Comments = () =>{
     for (let index = 0; index < 2; index++) {
         let parte1 = []
         let parte2 = []
-        let azar = Math.floor(Math.random()*filteredComments.length)
+        let azar = Math.floor(Math.random()* (filteredComments.length -1))
         commentsToShow.push(filteredComments[azar])
         if(azar === 0){
             filteredComments.shift()
@@ -23,8 +23,10 @@ const Comments = () =>{
         }
         filteredComments= parte1.concat(parte2)        
     }
-    console.log("filtrado")
-    console.log(commentsToShow)
+    // console.log("filtrado")
+    // console.log(commentsToShow)
+
+    const currentComment = commentsToShow.slice(0, 3)
 
 
     return(
@@ -36,10 +38,20 @@ const Comments = () =>{
             <div className={style.OpinionesCardContainer}>
                 <CommentCard 
                     stars={5}
-                    comment={'comment'}
+                    comment={commentsToShow.comment}
                     user={'user'}
                     userPic={''}
                     />
+                {currentComment.map(cardData =>{
+                return <CommentCard
+                    key= {cardData.id}
+                    ID= {cardData.id}
+                    stars={cardData.stars}
+                    comment={cardData.comment}
+                    user={cardData.user}
+                    userPic={cardData.userPic}
+                />})
+                }                  
             </div>
         </div>
     )
