@@ -22,3 +22,6 @@
     top: -360px;
     left: 17%;
 }
+.OpinionesCardContainer{
+    display: flex;
+}

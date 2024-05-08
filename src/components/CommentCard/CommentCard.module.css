@@ -7,18 +7,26 @@
     border-radius: 25px;
     position: relative;
     top: -250px;
-    font-size: 22px;
+    font-size: 21px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    position:relative
 }
 .cardUserdataContainer{
+    position: relative ;
     height: 100px;
+    width: 110%;
+    margin-left: -5%;
     background-color: rgb(63, 56, 56);
-    margin-top: 405px;
-    border-radius: 0px 0px 20px 20px;
+    margin-top: 175px;    
+    border-radius: 0px 0px 20px 20px;    
 }
 .cardUserComment{
     margin-left: 10px;
     font-style: italic;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .cardUserPic{

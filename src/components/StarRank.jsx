@@ -8,7 +8,7 @@ const StarRank = (props)=>{
   return(
     <div className={styles.stars}>
       {
-        [...new Array(5)].map((star, index)=>{return index < score ? <BsStarFill className={styles.individualStar}/> : <BsStar className={styles.individualStar}/>})
+        [...new Array(5)].map((star, index)=>{return index < score ? <BsStarFill key={index} className={styles.individualStar}/> : <BsStar key={index} className={styles.individualStar}/>})
       }
     </div>
   )
