@@ -14,6 +14,8 @@ import OfferedProperties from "../../components/OfferedProperties/OfferedPropert
 import QueresVender from "../../components/QueresVender/QueresVender";
 import YourPlace from "../../components/YourPLace/YourPlace";
 import Comments from "../../components/Comments/Comments";
+import OurOffices from "../../components/OurOffices/OurOffices";
+
 
 const Home = () => {
     return (
@@ -27,8 +29,8 @@ const Home = () => {
                     <QueresVender />    
                     <YourPlace />                          
                     <Comments />
-                    <CpiBanner />
-                    {/* <Footer /> */}
+                    <OurOffices />                    
+                    <Footer />
                     <WhatsApp />            
                 </div>                
             </div>
