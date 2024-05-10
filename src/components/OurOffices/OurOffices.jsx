@@ -1,11 +1,15 @@
 import FrizzoLogo from '../../Assets/1.png'
 import style from './OurOffices.module.css'
+import location from '../../Assets/Location.png'
+import Map from '../Map/Map'
 
 
 const OurOffices = () =>{
     return(
         <div className={style.ourOfficesContainer}>
             <div>
+                <Map />
+                <img className={style.OurOffLocation} src={location} alt="Location Pin icon"/>
                 <span className={style.OurOffadress}>Avda. Maipú 151 Oficina 2, Córdoba Capital</span>
             </div>
             <div>

@@ -1,26 +1,17 @@
 .MapContainer{
     height: 25em;
-    width: 35em;
+    width: 25em;
     margin-left: 1em;
     margin-top: 3em;
     margin-bottom: 5em;
-    border: 3px solid black;
-    box-shadow: 6px 4px 4px gray;
-    border-radius: 25px;
+    border: 5px solid rgba(191,35,84,1);
+    border-radius: 50%;   
+    background: linear-gradient(to rigth, rgba(236,69,24,1),  rgba(191,35,84,1));
 }
 .mapDiv{
     display: flex;
 }
+.borderGradientRizzo {
+    border-image-source: linear-gradient(to left, rgba(236,69,24,1),  rgba(191,35,84,1));
+}
 
-.mapTextDiv{
-    margin-top: 5em;
-    margin-left: 5em;
-}
-.mapH3{
-    color: #e5007f; 
-}
-.mapAdress{
-    position:absolute;
-    bottom: 0.1%;
-    left: 3.5em;
-}

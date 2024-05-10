@@ -30,19 +30,7 @@ const Map = () => {
 
   return (
     <div className={style.mapDiv}>
-        <div id="map" className={style.MapContainer} />
-              
-        <div className={style.mapAdress}>
-            <h3>Dirección: Avda. Maipú 151 Oficina 2, Córdoba Capital</h3>   
-        </div>
-
-        <div className={style.mapTextDiv}>
-            <h2 className={style.mapH2}>Horarios de atención<br/>Administración</h2>
-            <h3 className={style.mapH3}>08:00 a 18:00 horas</h3>
-            <br/>
-            <h2 className={style.mapH2}>Horarios de atención<br/>Comercial</h2>
-            <h3 className={style.mapH3}>09:00 a 16:00 horas</h3>
-        </div>        
+        <div id="map" className={style.MapContainer} />       
     </div>
   ) 
   
