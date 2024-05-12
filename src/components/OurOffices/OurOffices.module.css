@@ -11,10 +11,37 @@
 }
 .OurOfficefrizzoLogo{
     position: relative;
-    width: 23vw;
-    left: 60%;
+    width: 20vw;
+    left: 30%;
+}
+.OurOfNtrasOff, .OurOfNtrasOff2{
+    position: relative;
+    font-size: 3.9vw;
+    font-weight: 800;    
 }
 .OurOfNtrasOff{
-    font-size: 3.9vw;
+    right: 20%;
+}
+.OurOfNtrasOff2{
+    left: 32%;
+    top: -2vw;
+}
+.OurOffLocation{
+    position: relative;
+    margin-left: 4vw;
+    width: 2.3vw;
+    top: -5vw;
+}
+.OurOffadress{
+    position: relative;
+    margin-left: 0.5vw;
+    top: -5.5vw;
+}
+.OurOffHorarios{
+    background-color: rgba(236,69,24,1);
+    width: 60%;
+    margin-left: 20%;
+    height: 6vw;
     font-weight: 800;
+    font-size: 18px;
 }

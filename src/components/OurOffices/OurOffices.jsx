@@ -15,7 +15,9 @@ const OurOffices = () =>{
             <div>
                 <img className={style.OurOfficefrizzoLogo} src={FrizzoLogo} alt='logo Federico Rizzo inversiones' />
                 <span className={style.OurOfNtrasOff}>NUESTRAS</span>
-                <span className={style.OurOfNtrasOff}>OFICINAS</span>
+                <br />
+                <span className={style.OurOfNtrasOff2}>OFICINAS</span>
+                <div className={style.OurOffHorarios}>HORARIOS DE ATENCIÓN</div>
             </div>
         </div>
     )

@@ -1,8 +1,8 @@
 .MapContainer{
-    height: 25em;
-    width: 25em;
-    margin-left: 1em;
-    margin-top: 3em;
+    height: 20em;
+    width: 20em;
+    margin-left: 6em;
+    margin-top: 5em;
     margin-bottom: 5em;
     border: 5px solid rgba(191,35,84,1);
     border-radius: 50%;   
