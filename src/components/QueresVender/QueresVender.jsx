@@ -19,8 +19,6 @@ const QueresVender = ()=>{
 //    }
 
 
-
-
     return (
         <div className={style.QueresVenderContainer}>
             <span className={style.SpQueres}>¿QUERÉS</span>

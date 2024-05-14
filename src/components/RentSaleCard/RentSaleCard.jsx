@@ -15,6 +15,15 @@ const RentSaleCard = (props)=>{
     const imgRef = useRef();
     const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
+    let tempId = 100
+    const getTempId = ()=>{
+        tempId++
+        return tempId
+    }
+        
+        
+   
+
     // useEffect(() => {
     //     const listNode = imgRef.current;
     //     const imageNode = listNode.querySelectorAll('li > img')[currentImgIndex];
@@ -50,8 +59,9 @@ const RentSaleCard = (props)=>{
                             {/* <ul ref={imgRef}> */}
                                 {TRDb.map((image) => (
                                 //<li key={image.id}>
+                                <li key={getTempId()}>
                                     <img src={image.image} className={style.imageCss} alt={image.alt} />
-                                //</li>
+                                </li>
                                 ))}
                             {/* </ul> */}
                         </div>
@@ -64,8 +74,9 @@ const RentSaleCard = (props)=>{
                             {/* <ul ref={imgRef}> */}
                                 {SDb.map((image2) => (
                                 // <li key={image2.id}>
+                                <li key={getTempId()}>
                                     <img src={image2.image} className={style.SaleimageCss} alt={image2.alt} />                                
-                                //</li> 
+                                </li> 
                                 ))}                                                       
                             {/* </ul> */}
                         </div>
@@ -77,8 +88,9 @@ const RentSaleCard = (props)=>{
                             {/* <ul ref={imgRef}> */}
                                 {RDb.map((image3) => (
                                 // <li key={image3.id}>
+                                <li key={getTempId()}>
                                     <img src={image3.image} className={style.RentImageCss} alt={image3.alt} />
-                                // </li>
+                                </li>
                                 ))}
                             {/* </ul>    */}
                         </div>
