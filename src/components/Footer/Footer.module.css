@@ -1,3 +1,6 @@
+.footerContainer{
+    display: flex;
+}
 .footer {
     position: relative;
     bottom: 0;
@@ -6,7 +9,16 @@
     color: white;
     height: 29vw;
     text-align: center; /* Agregamos esta propiedad para centrar el contenido */ 
-    z-index: 10;       
+    z-index: 10;           
+}
+.FooterRizzoLogo{
+    position: relative;
+    width: 13vw;
+    margin-top: -20%;
+    object-fit: cover;
+    overflow: hidden;  
+    height: 7vw;
+    
 }
 .footer2{
     position: relative;

@@ -1,26 +1,30 @@
 import React from "react";
 import style from './Footer.module.css';
-import { SocialIcon } from 'react-social-icons/component';
-import { PhoneFilled } from '@ant-design/icons';
-import 'react-social-icons/facebook';
-import 'react-social-icons/instagram';
+import FedeRizzoLogo from '../../Assets/1.png'
+import CPIblack from '../../Assets/CPIblack.png'
+import CaCicBlack from '../../Assets/CacicBlack.png'
+
 
 const Footer = () => {
     return (
         <div className={style.footerContainer}>
-            <div className={style.footer}>                
-               
-                <p className={`${style.footerp} ${style.centeredContent}`}>
-                    <SocialIcon url="https://www.instagram.com/federicorizzo.ok/" className={style.icon1} target="_blank"/>
-                    <SocialIcon url="https://www.facebook.com/federicorizzo.ok" className={style.icon2} target="_blank"/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    admfederizo@gmail.com
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <div className={style.phoneNumber}><PhoneFilled />  351 3 415987</div>
-                </p>
+            <div className={style.footer}>    
 
-            </div>
-            <div className={style.footer2}>
+            <div className={style.footerFirstCol}>
+                <img src={FedeRizzoLogo} className={style.FooterRizzoLogo} alt="Logo Federico Rizzo"/>
+                <span>M.P.: 6918</span>
+                <img src={CPIblack} className={style.FooterCpiBlack} alt="Logo Consejo Prof Inmobiliarios"/>
+                <img src={CaCicBlack} className={style.FooterCaCICLogo} alt="Logo CaCIC"/>
+            </div>            
+            
+            <div className={style.footerSecondCol}>
+            </div> 
+
+            <div className={style.footerThirdCol}>
+            </div> 
+
+            <div className={style.footerFourthCol}>
+            </div> 
 
             </div>
         </div>
