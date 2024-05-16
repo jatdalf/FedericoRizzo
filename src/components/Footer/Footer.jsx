@@ -18,6 +18,7 @@ const Footer = () => {
             </div>            
             
             <div className={style.footerSecondCol}>
+                <span></span>
             </div> 
 
             <div className={style.footerThirdCol}>
