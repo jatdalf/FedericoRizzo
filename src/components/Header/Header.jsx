@@ -53,7 +53,7 @@ const Header = () => {
       </Menu.SubMenu>
 
       <Menu.Item key="6" >
-        <Link to="/Home#" onClick={() => handleScrollToSection('contactMe')}>Contacto</Link>
+        <Link to="/Home#" onClick={() => handleScrollToSection('OurOfficesSection')}>Contacto</Link>
       </Menu.Item>
       
       <Menu.Item key="7"  style={{ right: "5px" }} >
@@ -66,7 +66,7 @@ const Header = () => {
 
       
       <Menu.Item key="9" className={style.iconsMail}>
-       <Link to="/Home#" onClick={() => handleScrollToSection('contactMe')}><GrMailOption/></Link>       
+       <Link to="/Home#" onClick={() => handleScrollToSection('OurOfficesSection')}><GrMailOption/></Link>       
       </Menu.Item>
 
       <Menu.Item key="10" className={style.iconsInsta}>

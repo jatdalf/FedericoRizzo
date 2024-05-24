@@ -6,7 +6,7 @@ import Map from '../Map/Map'
 
 const OurOffices = () =>{
     return(
-        <div className={style.ourOfficesContainer}>
+        <div id="OurOfficesSection" className={style.ourOfficesContainer}>
             <div>
                 <Map />
                 <img className={style.OurOffLocation} src={location} alt="Location Pin icon"/>

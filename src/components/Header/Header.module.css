@@ -53,4 +53,7 @@
     .navContainer{
         font-size: 11px;       
     }
+    .topHeader{
+        height: 3vw;      
+    }
 }
