@@ -19,6 +19,7 @@ const OppCard = (props)=>{
     }else{
         cardPrice = props.temporal_coin + " " + formatearNumero(props.temporal_price)
     }
+    if (props.titles===null){ props.titles="" }
     const cardTitles = props.titles
     const cardText = props.titles.slice(0,cardTitles.length)     
 
