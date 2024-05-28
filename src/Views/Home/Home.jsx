@@ -1,6 +1,7 @@
 import React from "react";
-//import style from './Home.module.css'
+import style from './Home.module.css'
 import Header from '../../components/Header/Header.jsx';
+import RentSaleCard from "../../components/RentSaleCard/RentSaleCard";
 //import Carrousel from "../../components/Carrousel/Carrousel";
 //import MisionVisionValor from "../../components/MisionVisionValor/MisionVisionValor";
 //import WhatsApp from "../../components/Whatsapp/Whatsapp";
@@ -9,7 +10,6 @@ import Header from '../../components/Header/Header.jsx';
 //import Opportunities from "../../components/Opportunities/opportunities";
 //import CpiBanner from "../../components/CpiBanner/CpiBanner";
 //import Map from "../../components/Map/Map";
-//import RentSaleCard from "../../components/RentSaleCard/RentSaleCard";
 //import OfferedProperties from "../../components/OfferedProperties/OfferedProperties";
 //import QueresVender from "../../components/QueresVender/QueresVender";
 //import YourPlace from "../../components/YourPLace/YourPlace";
@@ -21,19 +21,19 @@ const Home = () => {
     return (
         <div>
             <Header />
-            {/* <div className={style.container}>
+             <div className={style.container}>
                 <div className={style.home}>
                     <RentSaleCard />
-                    <Opportunities />
+                    {/* <Opportunities />
                     <OfferedProperties />
                     <QueresVender />    
                     <YourPlace />                          
                     <Comments />
                     <OurOffices />                    
                     <Footer />
-                    <WhatsApp />            
+                    <WhatsApp />             */}
                 </div>                
-            </div> */}
+            </div> 
         </div>
     )
 }

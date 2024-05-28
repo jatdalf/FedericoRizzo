@@ -1,9 +1,16 @@
 import style from './HomeSearchBar.module.css'
 import { BiSearchAlt2 } from "react-icons/bi";
 import { IconContext } from "react-icons";
+import propiedadesDb from "../sellDb"
 
 const HomeSearchBar = () => {
+  //aqui debe fitrar los valores unicos del campo "neighborhood" del array
+  const uniqueNeighborhoods = [...new Set(propiedadesDb.map( P => P.neighborhood))];
   
+  //aqui debe filtrar los valores unicos del campo "bedrooms" del array
+  const dormitorios = [...new Set(propiedadesDb.map( P => P.bedrooms))];
+  dormitorios.sort()
+
   return (
     <>
       <div className={style.AlquilerVentaButtons}>            
@@ -24,28 +31,30 @@ const HomeSearchBar = () => {
         <div className={style.categorias}>
           <p>BARRIO</p>
           <select name="barrios" id="barrio" className={style.opt}> 
-            <option value="0">Barrio de Propiedad  &nbsp; &nbsp; &nbsp; &nbsp;</option>             
-            <option value="barrio1">Barrio1</option>
-            <option value="barrio2">Barrio2</option>
-            <option value="barrio3">Barrio3</option>
-            <option value="barrio4">Barrio4</option>              
+            <option value="all">Barrio de Propiedad  &nbsp; &nbsp; &nbsp; &nbsp;</option> 
+            {uniqueNeighborhoods.map (dataBarrio =>{
+              return(
+                <option value={dataBarrio}>{dataBarrio}</option>
+              )
+            })}                                
           </select>
         </div>
         <div className={style.categorias}>
           <p>DORMITORIOS</p>
           <select name="dormitorios" id="rooms" className={style.opt}> 
             <option value="0">Número de dormitorios &nbsp; &nbsp; &nbsp; &nbsp;</option>               
-            <option value="barrio1">1</option>
-            <option value="barrio2">2</option>
-            <option value="barrio3">3</option>
-            <option value="barrio4">4</option>              
+            {dormitorios.map (dataDormitorios =>{
+              return(
+                <option value={dataDormitorios}>{dataDormitorios}</option>
+              )
+            })}              
           </select>
         </div>
-        <div className={style.categorias}>          
+        <div className={style.butttonBuscar}>          
           <button className={style.buscar}>
-            <IconContext.Provider value={{ size: '2em' }}>
-              <BiSearchAlt2 />
-            </IconContext.Provider>
+              <IconContext.Provider value={{ size: '2em' }}>
+                <BiSearchAlt2 />
+              </IconContext.Provider>
             <span>Buscar</span>            
           </button>
         </div>

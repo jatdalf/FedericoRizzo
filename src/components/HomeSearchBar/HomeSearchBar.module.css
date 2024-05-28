@@ -88,3 +88,11 @@
     position: relative;
     top: -10px;
   }
+
+  .butttonBuscar :hover{        
+    background: linear-gradient(90deg, rgb(236, 130, 24) 0%, rgba(191, 35, 84, 0.87) 100%);
+  }
+  .buscar :hover{
+    font-size: 24px;
+    background: none;
+  }
