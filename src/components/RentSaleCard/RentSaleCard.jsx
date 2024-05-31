@@ -12,7 +12,7 @@ const RentSaleCard = (props)=>{
     const RDb = RentDb
 
     const randomizador = (min, max)=>{              
-        let resultado = Math.round(Math.random() * (max - min)) //+ min   
+        let resultado = Math.round(Math.random() * (max - min)) + min   
         return resultado
     }
     
@@ -62,33 +62,34 @@ const RentSaleCard = (props)=>{
     return(
         <>
         <div className={style.fondo}>
-            <div className={style.RentSaleCardContainer}>
+            <div className={style.AllCardsContainer}>
        
-                <div className={style.tempRentCard}>
-                    <div className={style.sliderContainer}>
+                <div className={style.leftCard}>
+                    <div className={style.LeftImageContainer}>
                         <div className={style.imagesContainer}>                        
                             <li key={getTempId()}>
-                                <img src={TRDb[PrimerNumero].image} className={style.imageCss} alt={TRDb[PrimerNumero].alt} />
+                                <img src={TRDb[PrimerNumero].image} className={style.LeftImageCss} alt={TRDb[PrimerNumero].alt} />
                             </li>
                         </div>
                     </div>
                 </div>
            
-                <div className={style.saleCard}>
-                    <div className={style.slider2Container}>
-                        <div className={style.images2Container}> 
+                <div className={style.middleCard}>
+                    <div className={style.MiddleImageContainer}>
+                        <div className={style.imagesContainer}> 
                             <li key={getTempId()}>
-                                <img src={SDb[SegundoNumero].image} className={style.SaleimageCss} alt={SDb[SegundoNumero].alt} />                                
+                                <img src={SDb[SegundoNumero].image} className={style.middleImageCss} alt={SDb[SegundoNumero].alt} />      
+                                <div className={style.overlay}></div>                          
                             </li> 
                         </div>
                     </div>
                 </div>       
 
-                <div className={style.rentCard}>
-                    <div className={style.slider3Container}>
-                        <div className={style.images3Container}>
+                <div className={style.rightCard}>
+                    <div className={style.sliderContainer}>
+                        <div className={style.imagesContainer}>
                             <li key={getTempId()}>
-                                <img src={RDb[TercerNumero].image} className={style.RentImageCss} alt={RDb[TercerNumero].alt} />
+                                <img src={RDb[TercerNumero].image} className={style.RightImageCss} alt={RDb[TercerNumero].alt} />
                             </li>             
                         </div>
                     </div>
@@ -102,7 +103,7 @@ const RentSaleCard = (props)=>{
         
             <HomeSearchBar />
         
-            <div className={style.logoImg}>
+            <div className={style.logoContainer}>
                 <img src={logo} className={style.logoImg} alt="Logo Inmobiliaria"/>
             </div>
         </div>

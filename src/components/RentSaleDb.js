@@ -4,7 +4,12 @@ import main2 from '../Assets/main2.png'
 import main3 from '../Assets/main3.png'
 import main4 from '../Assets/main4.png'
 
-const TempRentDb = [{
+const SalesDb = [{
+        id: 0,
+        alt: 'Duplex',
+        image: main,
+        text: 'Duplex'
+    },{
         id: 1,
         alt: 'casa de verano',
         image: 'https://static.wixstatic.com/media/400291_d7d4000c212b472794fe382864073c74~mv2.jpg',
@@ -29,14 +34,19 @@ const TempRentDb = [{
         alt: 'casa de invierno',
         image: 'https://static.wixstatic.com/media/400291_1eb9adcfde06409ba5eeb19706799478~mv2.jpg',
         text: 'INVIERNO'
+    },{
+        id: 6,
+        alt: 'casa en venta',
+        image: 'https://static.wixstatic.com/media/400291_04d44e86ce63464d8da94981cb742531~mv2.jpg',
+        text: 'CASAS'
+    },{
+        id: 7,
+        alt: 'departamento en venta',
+        image: 'https://static.wixstatic.com/media/400291_0b463829e41c49188626e2d0c1a8c586~mv2.jpg',
+        text: 'DEPARTAMENTOS'
     }]
 
-    const SalesDb = [{
-        id: 1,
-        alt: 'Duplex',
-        image: main,
-        text: 'Duplex'
-    },{
+    const TempRentDb = [{
         id: 2,
         alt: 'casa de gobierno',
         image: main1,
@@ -56,16 +66,6 @@ const TempRentDb = [{
         alt: 'Capitalinas',
         image: main4,
         text: 'vista del edificio Capitalinas'
-    },{
-        id: 6,
-        alt: 'casa en venta',
-        image: 'https://static.wixstatic.com/media/400291_04d44e86ce63464d8da94981cb742531~mv2.jpg',
-        text: 'CASAS'
-    },{
-        id: 7,
-        alt: 'departamento en venta',
-        image: 'https://static.wixstatic.com/media/400291_0b463829e41c49188626e2d0c1a8c586~mv2.jpg',
-        text: 'DEPARTAMENTOS'
     }]
 
 const RentDb =[{

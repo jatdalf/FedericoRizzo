@@ -1,109 +1,113 @@
-.fondo{
-    height: 800px;
+/* Fondo del componente, en negro y con una altura mayor a las imagenes*/
+.fondo {
+    height: 150vh;
     background-color: rgb(0, 0, 0);
     position: relative;
-    top: -5px;    
+    overflow: hidden;
 }
 
-.RentSaleCardContainer{
+/* .RentSaleCardContainer{
     display: flex;
     width: 100%;    
     min-width: 100%;
     margin-top: 1.5vw;        
     height: 460px;
     background-color: rgb(0, 0, 0);    
+} */
+.AllCardsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+    top: -8vw;    
+    background-color: rgb(0, 0, 0);
+    position: relative;    
 }
-.tempRentCard, .saleCard, .rentCard{
-    width: 33.3%;              
+
+.leftCard, .middleCard, .rightCard{             
     background-color: rgb(0, 0, 0);    
     margin-top: 71px;
     position: inherit;
+    width: 500px;    
 }
 
-
-.tempRentCard{
-    z-index: 1;
-    width: 500px;
-    height: 80%;    
-    margin-top: 68px;    
+.leftCard{
+    z-index: 1;     
+    left: 0; 
+    margin-left: 300px;    
 }
-.saleCard{
+
+.middleCard{
     z-index: 3;      
     -webkit-transform: skew(20deg);
     -moz-transform: skew(20deg);
     -ms-transform: skew(20deg);
     -o-transform: skew(20deg);
-    transform: skew(-20deg);
-    width: 450px;
-    margin-left: -98px;
-    margin-right: -82px;
-    
-}
-.rentCard{    
-    z-index: 2;    
-    padding-left: 4%;
-    width: 450px;    
+    transform: skew(-20deg);    
+    margin-left: -8vw;
+    margin-right: -8vw;        
 }
 
-.sliderContainer{
-    position: relative;
-    height: 458px;
-    top: -18.5%;    
+.rightCard{    
+    z-index: 2;  
+    margin-right: 300px;     
 }
+
 .imagesContainer{
     width: 100%;
     height: 100%;   
-    overflow: hidden;    
+    overflow: hidden;   
+    
 }
-.imageCss{
-    width: 500px;
-    height: 458px;
-    position: relative;    
+.LeftImageCss{
+    width: 700px;
+    height: 500px;
+    position: relative;       
+    object-fit: cover;
     z-index: -1;
+    left: 0;
 }
-.SaleimageCss{
-    width: 618px;
-    height: 458px;
+.middleImageCss{
+    width: 700px;
+    height: 500px;
     position: relative;       
     top: -0%;
-    margin-left: -82px;    
+    margin-left: -92px;    
     transform: skew(20deg);
+    object-fit: cover;
+    
 }
-.slider2Container{
-    position: relative;
-    height: 458px;
-    top: -18.5%;        
-}
-.images2Container{
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;   
-    overflow: hidden;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Negro con 30% de opacidad */
+    z-index: 2; /* Encima de la imagen, pero debajo del logo */
 }
-.slider3Container{
-    position: relative;
-    height: 458px;
-    top: -18.5%;
-}
-.images3Container{
-    width: 100%;
-    height: 100%;   
-    overflow: hidden;      
-}
-.RentImageCss{
-    width: 500px;
-    height: 458px;
+
+.RightImageCss{
+    width: 700px;
+    height: 500px;
     position: relative;    
     z-index: -1; 
+    object-fit: cover;
 }
+
+/* Contenedor del logo */
 .logoContainer{    
     position: absolute;
-    width: 20vw;    
-    left: 40%;
-    top: 50%;    
+    width: 260px;    
+    left: 30%;
+    top: 400px;    
 }
+
 .logoImg{
     position: relative;
-    width: 26vw;
+    width: 100%;
+    height: auto;
+    display: block;
     top: -32vw;
     z-index: 6; 
     left: 28%;
@@ -143,37 +147,32 @@
 }
 
 
-@media only screen and (max-width: 600px) {
- 
-
-    
+@media only screen and (max-width: 700px) {
+    .AllCardsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: -23vw;        
+        background-color: rgb(0, 0, 0);
+        position: relative;
+    }
+    .leftCard{
+        margin-left: 60vh;
+    }
+  
+    .middleCard{
+        width: 300px;
+        margin-left: -20vh;
+        margin-right: -30vh;  
+    }
+    .logoContainer{    
+        position: absolute;       
+        left: 3vh;
+        top: 30vh;    
+    }
 }
 /*
-.fondo {
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    overflow: hidden;
-}
-
-.RentSaleCardContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-    position: relative;
-}
-
-.tempRentCard, .saleCard, .rentCard {
-    width: 33.3%;
-    background-color: rgb(0, 0, 0);
-    margin-top: 71px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 .tempRentCard {
     left: 0;
