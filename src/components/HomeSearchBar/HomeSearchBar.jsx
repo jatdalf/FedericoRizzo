@@ -32,9 +32,9 @@ const HomeSearchBar = () => {
           <p>BARRIO</p>
           <select name="barrios" id="barrio" className={style.opt}> 
             <option value="all">Barrio de Propiedad  &nbsp; &nbsp; &nbsp; &nbsp;</option> 
-            {uniqueNeighborhoods.map (dataBarrio =>{
+            {uniqueNeighborhoods.map ((dataBarrio, index) =>{
               return(
-                <option value={dataBarrio}>{dataBarrio}</option>
+                <option key={`${dataBarrio}-${index}`} value={dataBarrio}>{dataBarrio}</option>
               )
             })}                                
           </select>
@@ -43,9 +43,9 @@ const HomeSearchBar = () => {
           <p>DORMITORIOS</p>
           <select name="dormitorios" id="rooms" className={style.opt}> 
             <option value="0">Número de dormitorios &nbsp; &nbsp; &nbsp; &nbsp;</option>               
-            {dormitorios.map (dataDormitorios =>{
+            {dormitorios.map ((dataDormitorios, index) =>{
               return(
-                <option value={dataDormitorios}>{dataDormitorios}</option>
+                <option key={`${dataDormitorios}-${index}`} value={dataDormitorios}>{dataDormitorios}</option>
               )
             })}              
           </select>

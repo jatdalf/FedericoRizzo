@@ -1,8 +1,7 @@
+import { Link } from 'react-router-dom';
 import React, { useRef, useState, useEffect } from 'react';
 import style from './RentSaleCard.module.css'
-import { Link } from 'react-router-dom';
 import {TempRentDb, SalesDb, RentDb}  from '../RentSaleDb';
-
 import logo from '../../Assets/1.png'
 import condecoracion from '../../Assets/condecoracion.png'
 import HomeSearchBar from '../HomeSearchBar/HomeSearchBar';
@@ -12,8 +11,20 @@ const RentSaleCard = (props)=>{
     const SDb = SalesDb
     const RDb = RentDb
 
-    const imgRef = useRef();
-    const [currentImgIndex, setCurrentImgIndex] = useState(0);
+    const randomizador = (min, max)=>{              
+        let resultado = Math.round(Math.random() * (max - min)) //+ min   
+        return resultado
+    }
+    
+    const PrimerNumero = randomizador(0, TRDb.length -1)
+    console.log(`primer numero ${PrimerNumero}`)
+
+    const SegundoNumero = randomizador(0, SDb.length -1)
+    console.log(`Segundo numero ${SegundoNumero}`)
+
+    const TercerNumero = randomizador(0, RDb.length -1)
+    console.log(`tercer numero ${TercerNumero}`)
+
 
     let tempId = 100
     const getTempId = ()=>{
@@ -52,47 +63,33 @@ const RentSaleCard = (props)=>{
         <>
         <div className={style.fondo}>
             <div className={style.RentSaleCardContainer}>
-                {/* <Link to="/Temporario"> */}
+       
                 <div className={style.tempRentCard}>
                     <div className={style.sliderContainer}>
-                        <div className={style.imagesContainer}>
-                            {/* <ul ref={imgRef}> */}
-                                {TRDb.map((image) => (
-                                //<li key={image.id}>
-                                <li key={getTempId()}>
-                                    <img src={image.image} className={style.imageCss} alt={image.alt} />
-                                </li>
-                                ))}
-                            {/* </ul> */}
+                        <div className={style.imagesContainer}>                        
+                            <li key={getTempId()}>
+                                <img src={TRDb[PrimerNumero].image} className={style.imageCss} alt={TRDb[PrimerNumero].alt} />
+                            </li>
                         </div>
                     </div>
                 </div>
-                {/* </Link> */}
+           
                 <div className={style.saleCard}>
                     <div className={style.slider2Container}>
-                        <div className={style.images2Container}>
-                            {/* <ul ref={imgRef}> */}
-                                {SDb.map((image2) => (
-                                // <li key={image2.id}>
-                                <li key={getTempId()}>
-                                    <img src={image2.image} className={style.SaleimageCss} alt={image2.alt} />                                
-                                </li> 
-                                ))}                                                       
-                            {/* </ul> */}
+                        <div className={style.images2Container}> 
+                            <li key={getTempId()}>
+                                <img src={SDb[SegundoNumero].image} className={style.SaleimageCss} alt={SDb[SegundoNumero].alt} />                                
+                            </li> 
                         </div>
                     </div>
                 </div>       
+
                 <div className={style.rentCard}>
                     <div className={style.slider3Container}>
                         <div className={style.images3Container}>
-                            {/* <ul ref={imgRef}> */}
-                                {RDb.map((image3) => (
-                                // <li key={image3.id}>
-                                <li key={getTempId()}>
-                                    <img src={image3.image} className={style.RentImageCss} alt={image3.alt} />
-                                </li>
-                                ))}
-                            {/* </ul>    */}
+                            <li key={getTempId()}>
+                                <img src={RDb[TercerNumero].image} className={style.RentImageCss} alt={RDb[TercerNumero].alt} />
+                            </li>             
                         </div>
                     </div>
                 </div>            
