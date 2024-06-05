@@ -1,12 +1,24 @@
 .AlquilerVentaButtons{
     position: relative;
-    top: -30vw;
+    top: -48vw;
     z-index: 10;
     left: 35.9%;    
     z-index: 20;
 }
+@media only screen and (max-width: 700px) {
+  .AlquilerVentaButtons{
+    position: absolute;
+    top: -440px;
+    left: -1000%;   
+  }
+}
+
+
+
+
+
 .filterButtonVentasOn, .filterButtonAlquileresOff, .filterButtonVentasOff, .filterButtonAlquileresOn{
-    font-size: 1.8vw;
+    font-size: 20px;
     margin-left: 1vw;
     margin-right: 1vw;
     border-radius: 35px;
@@ -20,7 +32,7 @@
 .filterButtonAlquileresOff, .filterButtonVentasOff {
     background-color: rgb(155, 155, 155);
     color: white;
-    opacity: 0.8;
+    opacity: 0.6;
     font-weight: 300;
 }
 .filterButtonAlquileresOff :hover{
