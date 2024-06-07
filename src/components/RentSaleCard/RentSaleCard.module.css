@@ -168,103 +168,41 @@
     }
     .logoContainer{    
         position: absolute;       
-        left: 3vh;
-        top: 30vh;    
+        left: -8vh;
+        top: 33vh;    
+    }
+    .logoImg{
+        width: 80vw;
+    }
+    .flechasContainer{
+        position: absolute;       
+        left: 2vh;
+        top: 23vh;    
+        z-index: 30;
+    }
+    .flechaIzquierda{
+        position: absolute;
+        color: white;
+        font-size: 70px;
+        font-weight: 400;        
+        margin-left: 10px;   
+        margin-top: 30vh;     
+    }
+    .flechaDerecha{
+        position: absolute;
+        color: white;
+        font-size: 70px;
+        font-weight: 400;            
+        left: 84vw;
+        margin-top: 30vh;     
+    }
+    .oportunidades{
+        font-size: 10vw;
+        top: -17vw;
+    }
+    .exclusivas{
+        font-size: 10vw;
+        top: -30vw;
+        left: 5vw;
     }
 }
-/*
-
-.tempRentCard {
-    left: 0;
-    transform: translateY(-50%);
-    width: 500px;
-    z-index: 1;
-}
-
-.saleCard {
-    left: 50%;
-    transform: translate(-50%, -50%) skew(-20deg);
-    width: 450px;
-    z-index: 3;
-}
-
-.rentCard {
-    right: 0;
-    transform: translateY(-50%);
-    width: 450px;
-    z-index: 2;
-}
-
-.sliderContainer, .slider2Container, .slider3Container {
-    position: relative;
-    height: 100%;
-}
-
-.imagesContainer, .images2Container, .images3Container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.imageCss, .SaleimageCss, .RentImageCss {
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: -1;
-}
-
-.SaleimageCss {
-    transform: skew(20deg);
-}
-
-.logoContainer {
-    position: absolute;
-    width: 20vw;
-    left: 40%;
-    top: 50%;
-}
-
-.logoImg {
-    position: absolute;
-    width: 26vw;
-    top: -32vw;
-    left: 37%;
-    z-index: 6;
-}
-
-.bottom {
-    position: relative;
-    background-color: black;
-    width: 100%;
-    height: 15vw;
-    top: -7vw;
-    color: white;
-}
-
-.oportunidades {
-    position: relative;
-    font-size: 3.5vw;
-    font-weight: 300;
-    top: 9vw;
-    left: 5vw;
-}
-
-.exclusivas {
-    position: relative;
-    font-size: 3.5vw;
-    font-weight: 300;
-    top: 0.9vw;
-    left: 33vw;
-    font-style: italic;
-    font-weight: 800;
-}
-
-.condecoracion {
-    position: relative;
-    top: -7vw;
-    left: 55vw;
-}
-
-.condecoracionImg {
-    width: 4vw;
-} */

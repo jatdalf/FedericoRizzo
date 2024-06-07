@@ -5,6 +5,7 @@ import {TempRentDb, SalesDb, RentDb}  from '../RentSaleDb';
 import logo from '../../Assets/1.png'
 import condecoracion from '../../Assets/condecoracion.png'
 import HomeSearchBar from '../HomeSearchBar/HomeSearchBar';
+import { ReloadOutlined } from '@ant-design/icons';
 
 const RentSaleCard = (props)=>{
     const TRDb = TempRentDb
@@ -17,13 +18,10 @@ const RentSaleCard = (props)=>{
     }
     
     const PrimerNumero = randomizador(0, TRDb.length -1)
-    console.log(`primer numero ${PrimerNumero}`)
 
     const SegundoNumero = randomizador(0, SDb.length -1)
-    console.log(`Segundo numero ${SegundoNumero}`)
 
-    const TercerNumero = randomizador(0, RDb.length -1)
-    console.log(`tercer numero ${TercerNumero}`)
+    const TercerNumero = randomizador(0, RDb.length -1)    
 
 
     let tempId = 100
@@ -32,7 +30,7 @@ const RentSaleCard = (props)=>{
         return tempId
     }
         
-        
+  
    
 
     // useEffect(() => {
@@ -84,6 +82,15 @@ const RentSaleCard = (props)=>{
                         </div>
                     </div>
                 </div>       
+
+                <div className={style.flechasContainer}>
+                    <div className={style.flechaIzquierda} >
+                        &#10094;
+                    </div>
+                    <div className={style.flechaDerecha}>
+                        &#10095;
+                    </div>
+                </div>
 
                 <div className={style.rightCard}>
                     <div className={style.sliderContainer}>

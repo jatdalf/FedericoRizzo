@@ -6,13 +6,13 @@ import propiedadesDb from "../sellDb"
 const HomeSearchBar = () => {
   //aqui debe fitrar los valores unicos del campo "neighborhood" del array
   const uniqueNeighborhoods = [...new Set(propiedadesDb.map( P => P.neighborhood))];
-  
+
   //aqui debe filtrar los valores unicos del campo "bedrooms" del array
   const dormitorios = [...new Set(propiedadesDb.map( P => P.bedrooms))];
   dormitorios.sort()
 
   return (
-    <>
+    <div className={style.mainHomeSearchBarContainer}>
       <div className={style.AlquilerVentaButtons}>            
         <button className={style.filterButtonVentasOn}>Ventas</button>
         <button className={style.filterButtonAlquileresOff}>Alquileres</button>
@@ -59,7 +59,7 @@ const HomeSearchBar = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
