@@ -5,6 +5,10 @@
     left: 35.9%;    
     z-index: 20;
 }
+.searchBarContainer{
+  position: relative;
+  margin-top: -16vw;
+}
 @media only screen and (max-width: 700px) {
   .mainHomeSearchBarContainer{
     position: absolute;

@@ -1,17 +1,19 @@
 .opSpan{ 
-    margin-top: 5%;
     margin-left: 5.4%;
     text-align: center;
     margin-bottom: 5%;
     color: white ;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 500;    
+    top: -1vw;
+    position: relative;
 }
 .opFondo{
+    z-index: 11;
     vertical-align:middle;
     background-color: black;
     position: relative;
-    top: -212px;
+    top: -16vw;
     height: 540px;
 }
 .oppCardContainer{
@@ -23,4 +25,12 @@
     flex-direction: row;
     width: 92%;
     justify-content: space-around;     
+}
+
+@media only screen and (max-width: 700px) {
+    .opSpan{
+        position: relative;
+        font-size: 3vw;
+        top: -15vw;
+    }
 }
