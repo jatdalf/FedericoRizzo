@@ -206,4 +206,7 @@
         top: -30vw;
         left: 5vw;
     }
+    .condecoracion{
+        visibility: hidden;
+    }
 }
